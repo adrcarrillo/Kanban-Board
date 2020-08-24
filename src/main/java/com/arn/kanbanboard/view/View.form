@@ -24,7 +24,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-25186"/>
+            </properties>
           </component>
           <component id="be31" class="javax.swing.JTextArea" binding="textAreaLeft2">
             <constraints>
@@ -32,7 +34,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-25186"/>
+            </properties>
           </component>
           <component id="299a9" class="javax.swing.JTextArea" binding="textAreaLeft3">
             <constraints>
