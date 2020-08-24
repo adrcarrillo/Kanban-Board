@@ -17,7 +17,7 @@ public class Main {
             System.out.println("Look and Feel not set");
         }
 
-        JFrame frame = new JFrame("MVC Multiply");
+        JFrame frame = new JFrame("Kanban Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(view.panelMain);
         frame.pack();
