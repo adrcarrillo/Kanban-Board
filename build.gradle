@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'com.formdev:flatlaf:0.30' //Look&Feel
+    compile 'com.intellij:forms_rt:7.0.3' //Intellij GUI form libs
+}
+
+mainClassName = 'com.arn.kanbanboard.main.Main'
