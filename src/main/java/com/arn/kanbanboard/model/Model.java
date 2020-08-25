@@ -15,4 +15,14 @@ public class Model {
         this.Note = "Hi I'm a new activity!";
         return this.Note;
     }
+
+    ReaderFile rdr = new ReaderFile();
+    public Item[] itemArray = rdr.Reader();
+
+    public void Show(){
+        System.out.println(itemArray[0].getName());
+        System.out.println(itemArray[1].getName());
+        System.out.println(itemArray[1].getID());
+    }
+
 }

@@ -14,6 +14,7 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     implementation 'com.formdev:flatlaf:0.30' //Look&Feel
     compile 'com.intellij:forms_rt:7.0.3' //Intellij GUI form libs
+    implementation 'com.google.code.gson:gson:2.8.6'
 }
 
 mainClassName = 'com.arn.kanbanboard.main.Main'

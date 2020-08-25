@@ -17,6 +17,7 @@ public class Controller implements ActionListener {
         this.model = model;
         this.view.menuOpen.addActionListener(this);
         this.view.textAreaLeft1.setText(this.model.activityA());
+        this.view.textAreaLeft2.setText(this.model.itemArray[0].getID());
     }
 
     @Override

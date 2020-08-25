@@ -11,7 +11,7 @@ public class View {
     public JPanel panelMain;
     private JPanel panelLeft;
     public JTextArea textAreaLeft1;
-    private JTextArea textAreaLeft2;
+    public JTextArea textAreaLeft2;
     private JTextArea textAreaLeft3;
     private JMenuBar MenuBar;
     private JMenu menuFile;
