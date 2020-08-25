@@ -2,22 +2,22 @@ package com.arn.kanbanboard.model;
 
 public class Item {
 
-    private String ID;
-    private String Name;
+    private String date;
+    private String activity;
 
-    public String getID() {
-        return ID;
+    public String getDate() {
+        return date;
     }
 
-    public void setID(String ID) {
-        this.ID = ID;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public String getName() {
-        return Name;
+    public String getActivity() {
+        return activity;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public void setActivity(String activity) {
+        this.activity = activity;
     }
 }

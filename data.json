@@ -1,11 +1,15 @@
 [
   {
-    "ID": "A",
-    "Name": "Activity1"
+    "date": "August 2020",
+    "activity": "A1 - Verify the rest of activities"
   },
   {
-    "ID": "B",
-    "Name": "Activity2"
+    "date": "August 2020",
+    "activity": "Activity2 - Other activity"
+  },
+  {
+    "date": "August 2020",
+    "activity": "Activity3 - Others"
   }
 
 ]

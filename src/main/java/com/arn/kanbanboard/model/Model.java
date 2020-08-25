@@ -20,9 +20,9 @@ public class Model {
     public Item[] itemArray = rdr.Reader();
 
     public void Show(){
-        System.out.println(itemArray[0].getName());
-        System.out.println(itemArray[1].getName());
-        System.out.println(itemArray[1].getID());
+        System.out.println(itemArray[0].getActivity());
+        System.out.println(itemArray[1].getActivity());
+        System.out.println(itemArray[2].getActivity());
     }
 
 }

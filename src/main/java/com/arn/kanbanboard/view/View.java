@@ -12,7 +12,7 @@ public class View {
     private JPanel panelLeft;
     public JTextArea textAreaLeft1;
     public JTextArea textAreaLeft2;
-    private JTextArea textAreaLeft3;
+    public JTextArea textAreaLeft3;
     private JMenuBar MenuBar;
     private JMenu menuFile;
     private JMenu menuEdit;
@@ -24,7 +24,7 @@ public class View {
     private JLabel boardLabel2;
     private JPanel panelRight;
     private JLabel boardLabel3;
-    private JTextArea textAreaCenter1;
+    public JTextArea textAreaCenter1;
     private JTextArea textAreaCenter2;
     private JTextArea textAreaCenter3;
     private JTextArea textAreaRight1;
@@ -59,6 +59,7 @@ public class View {
         textAreaLeft2.setBackground(new Color(-25186));
         panelLeft.add(textAreaLeft2, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         textAreaLeft3 = new JTextArea();
+        textAreaLeft3.setBackground(new Color(-25186));
         panelLeft.add(textAreaLeft3, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         boardLabel1 = new JLabel();
         boardLabel1.setText("TO DO");

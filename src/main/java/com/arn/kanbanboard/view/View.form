@@ -44,7 +44,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-25186"/>
+            </properties>
           </component>
           <component id="44a8a" class="javax.swing.JLabel" binding="boardLabel1">
             <constraints>
