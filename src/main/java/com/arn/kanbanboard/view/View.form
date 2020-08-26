@@ -141,7 +141,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-308"/>
+            </properties>
           </component>
           <component id="24d45" class="javax.swing.JTextArea" binding="textAreaCenter2">
             <constraints>
@@ -149,7 +151,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-308"/>
+            </properties>
           </component>
           <component id="252dc" class="javax.swing.JTextArea" binding="textAreaCenter3">
             <constraints>
@@ -157,7 +161,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-308"/>
+            </properties>
           </component>
         </children>
       </grid>
@@ -185,7 +191,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-3604533"/>
+            </properties>
           </component>
           <component id="72f6e" class="javax.swing.JTextArea" binding="textAreaRight2">
             <constraints>
@@ -193,7 +201,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-3604533"/>
+            </properties>
           </component>
           <component id="273d4" class="javax.swing.JTextArea" binding="textAreaRight3">
             <constraints>
@@ -201,7 +211,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-3604533"/>
+            </properties>
           </component>
         </children>
       </grid>

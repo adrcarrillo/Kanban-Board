@@ -16,14 +16,22 @@ public class Controller implements ActionListener {
         this.view = view;
         this.model = model;
         this.view.menuOpen.addActionListener(this);
-        this.view.textAreaCenter1.setText(this.model.activityA());
-        this.view.textAreaLeft1.setText(this.model.itemArray[0].getActivity());
-        this.view.textAreaLeft2.setText(this.model.itemArray[1].getActivity());
-        this.view.textAreaLeft3.setText(this.model.itemArray[2].getActivity());
+//        this.view.textAreaCenter1.setText(this.model.activityA());
+        this.view.textAreaLeft1.setText(this.model.itemArray[0].getActivityTodo());
+        this.view.textAreaLeft2.setText(this.model.itemArray[1].getActivityTodo());
+        this.view.textAreaLeft3.setText(this.model.itemArray[2].getActivityTodo());
+
+        this.view.textAreaCenter1.setText(this.model.itemArray[0].getActivityDoing());
+        this.view.textAreaCenter2.setText(this.model.itemArray[1].getActivityDoing());
+        this.view.textAreaCenter3.setText(this.model.itemArray[2].getActivityDoing());
+
+        this.view.textAreaRight1.setText(this.model.itemArray[0].getActivityDone());
+        this.view.textAreaRight2.setText(this.model.itemArray[1].getActivityDone());
+        this.view.textAreaRight3.setText(this.model.itemArray[2].getActivityDone());
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JOptionPane.showMessageDialog(null, "Hi Kanban Board");
+        JOptionPane.showMessageDialog(null, "Menu WIP");
     }
 }

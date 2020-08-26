@@ -25,11 +25,11 @@ public class View {
     private JPanel panelRight;
     private JLabel boardLabel3;
     public JTextArea textAreaCenter1;
-    private JTextArea textAreaCenter2;
-    private JTextArea textAreaCenter3;
-    private JTextArea textAreaRight1;
-    private JTextArea textAreaRight2;
-    private JTextArea textAreaRight3;
+    public JTextArea textAreaCenter2;
+    public JTextArea textAreaCenter3;
+    public JTextArea textAreaRight1;
+    public JTextArea textAreaRight2;
+    public JTextArea textAreaRight3;
 
 
     {
@@ -94,10 +94,13 @@ public class View {
         boardLabel2.setText("DOING");
         panelCenter.add(boardLabel2, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         textAreaCenter1 = new JTextArea();
+        textAreaCenter1.setBackground(new Color(-308));
         panelCenter.add(textAreaCenter1, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         textAreaCenter2 = new JTextArea();
+        textAreaCenter2.setBackground(new Color(-308));
         panelCenter.add(textAreaCenter2, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         textAreaCenter3 = new JTextArea();
+        textAreaCenter3.setBackground(new Color(-308));
         panelCenter.add(textAreaCenter3, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         panelRight = new JPanel();
         panelRight.setLayout(new GridLayoutManager(4, 1, new Insets(0, 0, 0, 0), -1, -1));
@@ -106,10 +109,13 @@ public class View {
         boardLabel3.setText("DONE");
         panelRight.add(boardLabel3, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         textAreaRight1 = new JTextArea();
+        textAreaRight1.setBackground(new Color(-3604533));
         panelRight.add(textAreaRight1, new GridConstraints(1, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         textAreaRight2 = new JTextArea();
+        textAreaRight2.setBackground(new Color(-3604533));
         panelRight.add(textAreaRight2, new GridConstraints(2, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
         textAreaRight3 = new JTextArea();
+        textAreaRight3.setBackground(new Color(-3604533));
         panelRight.add(textAreaRight3, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_BOTH, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_WANT_GROW, null, new Dimension(150, 50), null, 0, false));
     }
 

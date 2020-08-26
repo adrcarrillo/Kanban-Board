@@ -23,18 +23,6 @@ public class Main {
             System.out.println("Look and Feel not set");
         }
 
-        /*
-        //TEST
-        ReaderFile rdr = new ReaderFile();
-        Item[] itemArray = rdr.Reader();
-        System.out.println(itemArray[0].getName());
-        System.out.println(itemArray[1].getID());
-        //END TEST
-         */
-
-        //TEST
-        mod.Show();
-
         JFrame frame = new JFrame("Kanban Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(vie.panelMain);

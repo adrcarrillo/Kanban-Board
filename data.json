@@ -1,15 +1,18 @@
 [
   {
-    "date": "August 2020",
-    "activity": "A1 - Verify the rest of activities"
+    "activityTodo": "Todo1\nNew Line",
+    "activityDoing": "Doing1",
+    "activityDone": "Done1"
   },
   {
-    "date": "August 2020",
-    "activity": "Activity2 - Other activity"
+    "activityTodo": "Todo2",
+    "activityDoing": "Doing2",
+    "activityDone": "Done2"
   },
   {
-    "date": "August 2020",
-    "activity": "Activity3 - Others"
+    "activityTodo": "Todo3",
+    "activityDoing": "Doing3",
+    "activityDone": "Done3"
   }
 
 ]
