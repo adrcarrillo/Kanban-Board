@@ -20,7 +20,7 @@ public class Main {
             UIManager.setLookAndFeel(new FlatIntelliJLaf());
 
         } catch (Exception e) {
-            System.out.println("Look and Feel not set");
+            System.out.println("Look and Feel is not set");
         }
 
         JFrame frame = new JFrame("Kanban Board");
