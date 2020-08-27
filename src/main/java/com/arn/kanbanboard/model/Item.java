@@ -2,22 +2,31 @@ package com.arn.kanbanboard.model;
 
 public class Item {
 
-    private String date;
-    private String activity;
+    private String activityTodo;
+    private String activityDoing;
+    private String activityDone;
 
-    public String getDate() {
-        return date;
+    public String getActivityTodo() {
+        return activityTodo;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setActivityTodo(String activityTodo) {
+        this.activityTodo = activityTodo;
     }
 
-    public String getActivity() {
-        return activity;
+    public String getActivityDoing() {
+        return activityDoing;
     }
 
-    public void setActivity(String activity) {
-        this.activity = activity;
+    public void setActivityDoing(String activityDoing) {
+        this.activityDoing = activityDoing;
+    }
+
+    public String getActivityDone() {
+        return activityDone;
+    }
+
+    public void setActivityDone(String activityDone) {
+        this.activityDone = activityDone;
     }
 }

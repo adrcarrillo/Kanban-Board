@@ -1,9 +1,7 @@
 package com.arn.kanbanboard.main;
 
 import com.arn.kanbanboard.controller.Controller;
-
 import com.arn.kanbanboard.model.Model;
-
 import com.arn.kanbanboard.view.View;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 
@@ -20,20 +18,8 @@ public class Main {
             UIManager.setLookAndFeel(new FlatIntelliJLaf());
 
         } catch (Exception e) {
-            System.out.println("Look and Feel not set");
+            System.out.println("Look and Feel is not set");
         }
-
-        /*
-        //TEST
-        ReaderFile rdr = new ReaderFile();
-        Item[] itemArray = rdr.Reader();
-        System.out.println(itemArray[0].getName());
-        System.out.println(itemArray[1].getID());
-        //END TEST
-         */
-
-        //TEST
-        mod.Show();
 
         JFrame frame = new JFrame("Kanban Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

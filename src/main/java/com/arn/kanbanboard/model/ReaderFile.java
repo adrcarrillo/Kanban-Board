@@ -12,7 +12,8 @@ public class ReaderFile {
 
     public Item[] Reader() {
         try {
-            reader = new BufferedReader(new FileReader("data.json"));
+            String userPath = System.getProperty("user.home");
+            reader = new BufferedReader(new FileReader(userPath+"/data.json"));
             Gson gson = new Gson();
             itemArray = gson.fromJson(reader, Item[].class);
         } catch (FileNotFoundException e) {
