@@ -30,6 +30,7 @@ public class View {
     public JTextArea textAreaRight1;
     public JTextArea textAreaRight2;
     public JTextArea textAreaRight3;
+    public JMenuItem menuUpdate;
 
 
     {
@@ -75,12 +76,16 @@ public class View {
         menuFile.setText("File");
         MenuBar.add(menuFile, new GridConstraints(0, 0, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, null, null, null, 0, false));
         menuOpen = new JMenuItem();
+        menuOpen.setEnabled(true);
         menuOpen.setText("Open");
         menuOpen.setVerticalTextPosition(0);
         menuFile.add(menuOpen);
         menuSave = new JMenuItem();
         menuSave.setText("Save");
         menuFile.add(menuSave);
+        menuUpdate = new JMenuItem();
+        menuUpdate.setText("Update");
+        menuFile.add(menuUpdate);
         menuEdit = new JMenu();
         menuEdit.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
         menuEdit.setText("Edit");

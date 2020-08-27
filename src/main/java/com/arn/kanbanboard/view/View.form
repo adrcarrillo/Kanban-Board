@@ -86,6 +86,7 @@
                   <component id="c3333" class="javax.swing.JMenuItem" binding="menuOpen">
                     <constraints/>
                     <properties>
+                      <enabled value="true"/>
                       <text value="Open"/>
                       <verticalTextPosition value="0"/>
                     </properties>
@@ -94,6 +95,12 @@
                     <constraints/>
                     <properties>
                       <text value="Save"/>
+                    </properties>
+                  </component>
+                  <component id="75c1c" class="javax.swing.JMenuItem" binding="menuUpdate">
+                    <constraints/>
+                    <properties>
+                      <text value="Update"/>
                     </properties>
                   </component>
                 </children>
