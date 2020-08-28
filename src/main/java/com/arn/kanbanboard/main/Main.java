@@ -2,6 +2,7 @@ package com.arn.kanbanboard.main;
 
 import com.arn.kanbanboard.controller.Controller;
 import com.arn.kanbanboard.model.Model;
+import com.arn.kanbanboard.model.ParserJsonFile;
 import com.arn.kanbanboard.view.View;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 
@@ -27,6 +28,9 @@ public class Main {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
+        ParserJsonFile wr = new ParserJsonFile();
+        wr.Writer();
 
     }
 }

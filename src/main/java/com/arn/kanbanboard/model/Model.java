@@ -18,7 +18,7 @@ public class Model {
     }
      */
 
-    ReaderFile rdr = new ReaderFile();
+    ParserJsonFile rdr = new ParserJsonFile();
     public Item[] itemArray = rdr.Reader();
 
 }
