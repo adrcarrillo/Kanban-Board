@@ -30,14 +30,14 @@ public class Main {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
-
+        /*
         //Run Test1
         ParserJson parserJson = new ParserJson();
         Item[] itemin = parserJson.ReadArray();
         System.out.println(itemin[0].getActivityTodo());
         Item[] itemout = parserJson.WriteArray(itemin);
         parserJson.Save(itemout);
-
+        */
 
 
         /*

@@ -19,8 +19,7 @@ public class Controller implements ActionListener {
         this.view = view;
         this.model = model;
         this.view.menuUpdate.addActionListener(this);
-
-        this.view.textAreaLeft1.setText(this.model.readArray[0].getActivityTodo());
+        this.view.textAreaLeft1.setText(this.model.itemIn[0].getActivityTodo());
     }
 
     @Override
@@ -29,7 +28,7 @@ public class Controller implements ActionListener {
 
         //Update Stickers
         Model mod = new Model();
-        this.view.textAreaLeft1.setText(mod.readArray[0].getActivityTodo());
+        this.view.textAreaLeft1.setText(mod.itemIn[0].getActivityTodo());
 
         //Save Output array
 
