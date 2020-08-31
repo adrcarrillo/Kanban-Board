@@ -1,6 +1,7 @@
 package com.arn.kanbanboard.main;
 
 import com.arn.kanbanboard.controller.Controller;
+import com.arn.kanbanboard.model.Item;
 import com.arn.kanbanboard.model.Model;
 import com.arn.kanbanboard.model.ParserJson;
 import com.arn.kanbanboard.view.View;
@@ -30,10 +31,17 @@ public class Main {
         frame.setVisible(true);
 
 
+        //Run Test1
+        ParserJson parserJson = new ParserJson();
+        Item[] itemin = parserJson.ReadArray();
+        System.out.println(itemin[0].getActivityTodo());
+        Item[] itemout = parserJson.WriteArray(itemin);
+        parserJson.Save(itemout);
+
 
 
         /*
-        //Run Test
+        //Run Test2
         ParserJson wr = new ParserJson();
 
         //String[][] stringArray = { {"", "", ""}, {"", "", ""}, {"", "", ""} };
