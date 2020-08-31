@@ -16,7 +16,7 @@ public class ParserJson {
 
     public Item[] ReadArray() {
         try {
-            reader = new BufferedReader(new FileReader(userPath+"/data.json"));
+            reader = new BufferedReader(new FileReader(userPath+"/data2.json"));
             itemIn = gson.fromJson(reader, Item[].class);
         } catch (FileNotFoundException e) {
 
@@ -24,15 +24,6 @@ public class ParserJson {
         }
         return this.itemIn;
     }
-
-    /*
-    public Item[] WriteArray2(String[][] stringArray){
-        itemOut[0] = new Item(stringArray[0][0], stringArray[0][1], stringArray[0][2]);
-        itemOut[1] = new Item(stringArray[1][0], stringArray[1][1], stringArray[1][2]);
-        itemOut[2] = new Item(stringArray[2][0], stringArray[2][1], stringArray[2][2]);
-        return this.itemOut;
-    }
-     */
 
     public Item[] WriteArray(Item[] itemIn){
         itemOut[0] = new Item(this.itemIn[0].getActivityTodo(), this.itemIn[0].getActivityDoing(), this.itemIn[0].getActivityDone());
