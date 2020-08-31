@@ -32,11 +32,21 @@ public class Main {
 
         //Run Test
         ParserJsonFile wr = new ParserJsonFile();
-        wr.Writer(wr.WriterArray2());
 
-        String[][] stringArray = { {"Hola1", "Hola2", "Hola3"}, {"Ola1", "Ola2", "Ola3"}, {"Hallo1", "Hallo2", "Hallo3"}  };
+        String[][] stringArray = { {"", "", ""}, {"", "", ""}, {"", "", ""} };
+        //String[][] stringArray = new String[3][3];
+
         stringArray[0][0]="Guten Morgen";
         stringArray[2][2]="Guten Nach";
+        /*
+        stringArray[0][1]="";
+        stringArray[0][2]="";
+        stringArray[1][0]="";
+        stringArray[1][1]="";
+        stringArray[1][2]="";
+        stringArray[2][0]="";
+        stringArray[2][1]="";
+         */
 
         wr.Writer(wr.WriterArray(stringArray));
 

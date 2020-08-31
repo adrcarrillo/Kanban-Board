@@ -25,15 +25,6 @@ public class ParserJsonFile {
         return this.itemIn;
     }
 
-    public Item[] WriterArray2() {
-        itemOut[0] = new Item("Hi Todo", "Hi Doing", "Hi Done");
-        System.out.println(itemOut[0].getActivityTodo());
-        itemOut[1] = new Item("Hi Todo2", "Hi Doing2", "Hi Done2");
-        itemOut[2] = new Item("Hi Todo3", "Hi Doing3", "Hi Done3");
-        return this.itemOut;
-    }
-
-
     public Item[] WriterArray(String[][] stringArray){
         itemOut[0] = new Item(stringArray[0][0], stringArray[0][1], stringArray[0][2]);
         itemOut[1] = new Item(stringArray[1][0], stringArray[1][1], stringArray[1][2]);
