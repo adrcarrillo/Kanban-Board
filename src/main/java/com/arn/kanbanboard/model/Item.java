@@ -35,4 +35,5 @@ public class Item {
         this.activityDoing = activityDoing;
         this.activityDone = activityDone;
     }
+
 }

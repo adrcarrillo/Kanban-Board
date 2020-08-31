@@ -29,8 +29,16 @@ public class Main {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
+
+        //Run Test
         ParserJsonFile wr = new ParserJsonFile();
-        wr.Writer();
+        wr.Writer(wr.WriterArray2());
+
+        String[][] stringArray = { {"Hola1", "Hola2", "Hola3"}, {"Ola1", "Ola2", "Ola3"}, {"Hallo1", "Hallo2", "Hallo3"}  };
+        stringArray[0][0]="Guten Morgen";
+        stringArray[2][2]="Guten Nach";
+
+        wr.Writer(wr.WriterArray(stringArray));
 
     }
 }
