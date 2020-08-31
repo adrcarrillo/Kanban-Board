@@ -2,7 +2,7 @@ package com.arn.kanbanboard.main;
 
 import com.arn.kanbanboard.controller.Controller;
 import com.arn.kanbanboard.model.Model;
-import com.arn.kanbanboard.model.ParserJsonFile;
+import com.arn.kanbanboard.model.ParserJson;
 import com.arn.kanbanboard.view.View;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 
@@ -30,14 +30,21 @@ public class Main {
         frame.setVisible(true);
 
 
-        //Run Test
-        ParserJsonFile wr = new ParserJsonFile();
 
-        String[][] stringArray = { {"", "", ""}, {"", "", ""}, {"", "", ""} };
-        //String[][] stringArray = new String[3][3];
+
+        /*
+        //Run Test
+        ParserJson wr = new ParserJson();
+
+        //String[][] stringArray = { {"", "", ""}, {"", "", ""}, {"", "", ""} };
+        String[][] stringArray = new String[3][3];
 
         stringArray[0][0]="Guten Morgen";
         stringArray[2][2]="Guten Nach";
+
+        wr.Save(wr.WriteArray(stringArray));
+         */
+
         /*
         stringArray[0][1]="";
         stringArray[0][2]="";
@@ -48,7 +55,8 @@ public class Main {
         stringArray[2][1]="";
          */
 
-        wr.Writer(wr.WriterArray(stringArray));
+
+
 
     }
 }

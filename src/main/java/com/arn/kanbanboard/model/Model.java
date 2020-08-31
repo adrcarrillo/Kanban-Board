@@ -2,7 +2,9 @@ package com.arn.kanbanboard.model;
 
 public class Model {
 
-    ParserJsonFile rdr = new ParserJsonFile();
-    public Item[] itemArray = rdr.ReaderArray();
+    ParserJson parserJson = new ParserJson();
+ //   private ParserJson parserJson;
+    public Item[] readArray = parserJson.ReadArray();
+
 
 }
