@@ -16,7 +16,7 @@ public class ParserJson {
 
     public Item[] ReadArray() {
         try {
-            reader = new BufferedReader(new FileReader(userPath+"/data2.json"));
+            reader = new BufferedReader(new FileReader(userPath+"/data.json"));
             itemIn = gson.fromJson(reader, Item[].class);
         } catch (FileNotFoundException e) {
 
@@ -34,7 +34,7 @@ public class ParserJson {
 
     public void Save(Item[] itemOut){
         try {
-            writer = new BufferedWriter(new FileWriter(userPath+"/data2.json"));
+            writer = new BufferedWriter(new FileWriter(userPath+"/data.json"));
             String json = gson.toJson(itemOut);
             writer.write(json);
             writer.close();

@@ -18,7 +18,7 @@ public class Controller implements ActionListener {
     public Controller (View view, Model model){
         this.view = view;
         this.model = model;
-        this.view.menuUpdate.addActionListener(this);
+        this.view.menuSave.addActionListener(this);
 
         this.view.textAreaLeft1.setText(this.model.itemIn[0].getActivityTodo());
         this.view.textAreaCenter1.setText(this.model.itemIn[0].getActivityDoing());
@@ -36,9 +36,9 @@ public class Controller implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JOptionPane.showMessageDialog(null, "Board Updated");
+        JOptionPane.showMessageDialog(null, "Board Saved");
 
-        //Update Stickers
+        //Get fields
         Model mod = new Model();
         mod.itemOut[0].setActivityTodo(this.view.textAreaLeft1.getText());
         mod.itemOut[0].setActivityDoing(this.view.textAreaCenter1.getText());
@@ -52,11 +52,7 @@ public class Controller implements ActionListener {
         mod.itemOut[2].setActivityDoing(this.view.textAreaCenter3.getText());
         mod.itemOut[2].setActivityDone(this.view.textAreaRight3.getText());
 
-
         mod.saveBoard(mod.itemOut);
-
-
-
     }
 
 }
