@@ -1,7 +1,9 @@
 package com.arn.kanbanboard.main;
 
 import com.arn.kanbanboard.controller.Controller;
+import com.arn.kanbanboard.model.Item;
 import com.arn.kanbanboard.model.Model;
+import com.arn.kanbanboard.model.ParserJson;
 import com.arn.kanbanboard.view.View;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 
@@ -27,6 +29,42 @@ public class Main {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
+        /*
+        //Run Test1
+        ParserJson parserJson = new ParserJson();
+        Item[] itemin = parserJson.ReadArray();
+        System.out.println(itemin[0].getActivityTodo());
+        Item[] itemout = parserJson.WriteArray(itemin);
+        parserJson.Save(itemout);
+        */
+
+
+        /*
+        //Run Test2
+        ParserJson wr = new ParserJson();
+
+        //String[][] stringArray = { {"", "", ""}, {"", "", ""}, {"", "", ""} };
+        String[][] stringArray = new String[3][3];
+
+        stringArray[0][0]="Guten Morgen";
+        stringArray[2][2]="Guten Nach";
+
+        wr.Save(wr.WriteArray(stringArray));
+         */
+
+        /*
+        stringArray[0][1]="";
+        stringArray[0][2]="";
+        stringArray[1][0]="";
+        stringArray[1][1]="";
+        stringArray[1][2]="";
+        stringArray[2][0]="";
+        stringArray[2][1]="";
+         */
+
+
+
 
     }
 }

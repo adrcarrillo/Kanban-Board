@@ -29,4 +29,11 @@ public class Item {
     public void setActivityDone(String activityDone) {
         this.activityDone = activityDone;
     }
+
+    public Item(String activityTodo, String activityDoing, String activityDone) {
+        this.activityTodo = activityTodo;
+        this.activityDoing = activityDoing;
+        this.activityDone = activityDone;
+    }
+
 }

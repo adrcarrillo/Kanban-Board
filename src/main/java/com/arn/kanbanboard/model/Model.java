@@ -1,24 +1,13 @@
 package com.arn.kanbanboard.model;
 
 public class Model {
-    private String Note;
 
-    public String getNote() {
-        return Note;
+    ParserJson parserJson = new ParserJson();
+    public Item[] itemIn = parserJson.ReadArray();
+    public Item[] itemOut = parserJson.WriteArray(itemIn);
+
+    public void saveBoard(Item[] itemOut){
+        parserJson.Save(this.itemOut);
     }
-
-    public void setNote(String note) {
-        Note = note;
-    }
-
-    /*
-    public String activityA() {
-        this.Note = "Hi I'm a new activity!";
-        return this.Note;
-    }
-     */
-
-    ReaderFile rdr = new ReaderFile();
-    public Item[] itemArray = rdr.Reader();
 
 }

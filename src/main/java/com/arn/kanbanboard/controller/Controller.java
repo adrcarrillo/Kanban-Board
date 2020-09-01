@@ -15,26 +15,23 @@ public class Controller implements ActionListener {
     private Model model;
 
 
-    //ReaderFile rdr = new ReaderFile();
-
-
     public Controller (View view, Model model){
         this.view = view;
         this.model = model;
         this.view.menuUpdate.addActionListener(this);
 
-//        this.view.textAreaCenter1.setText(this.model.activityA());
-        this.view.textAreaLeft1.setText(this.model.itemArray[0].getActivityTodo());
-        this.view.textAreaLeft2.setText(this.model.itemArray[1].getActivityTodo());
-        this.view.textAreaLeft3.setText(this.model.itemArray[2].getActivityTodo());
+        this.view.textAreaLeft1.setText(this.model.itemIn[0].getActivityTodo());
+        this.view.textAreaCenter1.setText(this.model.itemIn[0].getActivityDoing());
+        this.view.textAreaRight1.setText(this.model.itemIn[0].getActivityDone());
 
-        this.view.textAreaCenter1.setText(this.model.itemArray[0].getActivityDoing());
-        this.view.textAreaCenter2.setText(this.model.itemArray[1].getActivityDoing());
-        this.view.textAreaCenter3.setText(this.model.itemArray[2].getActivityDoing());
+        this.view.textAreaLeft2.setText(this.model.itemIn[1].getActivityTodo());
+        this.view.textAreaCenter2.setText(this.model.itemIn[1].getActivityDoing());
+        this.view.textAreaRight2.setText(this.model.itemIn[1].getActivityDone());
 
-        this.view.textAreaRight1.setText(this.model.itemArray[0].getActivityDone());
-        this.view.textAreaRight2.setText(this.model.itemArray[1].getActivityDone());
-        this.view.textAreaRight3.setText(this.model.itemArray[2].getActivityDone());
+        this.view.textAreaLeft3.setText(this.model.itemIn[2].getActivityTodo());
+        this.view.textAreaCenter3.setText(this.model.itemIn[2].getActivityDoing());
+        this.view.textAreaRight3.setText(this.model.itemIn[2].getActivityDone());
+
     }
 
     @Override
@@ -43,17 +40,22 @@ public class Controller implements ActionListener {
 
         //Update Stickers
         Model mod = new Model();
-        this.view.textAreaLeft1.setText(mod.itemArray[0].getActivityTodo());
-        this.view.textAreaLeft2.setText(mod.itemArray[1].getActivityTodo());
-        this.view.textAreaLeft3.setText(mod.itemArray[2].getActivityTodo());
+        mod.itemOut[0].setActivityTodo(this.view.textAreaLeft1.getText());
+        mod.itemOut[0].setActivityDoing(this.view.textAreaCenter1.getText());
+        mod.itemOut[0].setActivityDone(this.view.textAreaRight1.getText());
 
-        this.view.textAreaCenter1.setText(mod.itemArray[0].getActivityDoing());
-        this.view.textAreaCenter2.setText(mod.itemArray[1].getActivityDoing());
-        this.view.textAreaCenter3.setText(mod.itemArray[2].getActivityDoing());
+        mod.itemOut[1].setActivityTodo(this.view.textAreaLeft2.getText());
+        mod.itemOut[1].setActivityDoing(this.view.textAreaCenter2.getText());
+        mod.itemOut[1].setActivityDone(this.view.textAreaRight2.getText());
 
-        this.view.textAreaRight1.setText(mod.itemArray[0].getActivityDone());
-        this.view.textAreaRight2.setText(mod.itemArray[1].getActivityDone());
-        this.view.textAreaRight3.setText(mod.itemArray[2].getActivityDone());
+        mod.itemOut[2].setActivityTodo(this.view.textAreaLeft3.getText());
+        mod.itemOut[2].setActivityDoing(this.view.textAreaCenter3.getText());
+        mod.itemOut[2].setActivityDone(this.view.textAreaRight3.getText());
+
+
+        mod.saveBoard(mod.itemOut);
+
+
 
     }
 
