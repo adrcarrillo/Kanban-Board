@@ -1,6 +1,7 @@
 package com.arn.kanbanboard.model;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.*;
 
@@ -14,11 +15,17 @@ public class Model {
     BufferedReader reader;
     BufferedWriter writer;
     String userPath = System.getProperty("user.home");
-    Gson gson = new Gson();
+
+
+
 
     public Item[] ReadArray() {
         try {
             reader = new BufferedReader(new FileReader(userPath+"/data.json"));
+
+            GsonBuilder gsonBuilder = new GsonBuilder();
+            gsonBuilder.registerTypeAdapter(Item.class, new ItemCreator());
+            Gson gson = gsonBuilder.create();
             itemIn = gson.fromJson(reader, Item[].class);
 
         } catch (FileNotFoundException e) {
@@ -37,6 +44,7 @@ public class Model {
 
     public void Save(Item[] itemOut){
         try {
+            Gson gson = new Gson();
             writer = new BufferedWriter(new FileWriter(userPath+"/data.json"));
             String json = gson.toJson(itemOut);
             writer.write(json);
