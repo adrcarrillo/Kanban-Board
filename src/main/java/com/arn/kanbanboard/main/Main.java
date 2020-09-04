@@ -6,21 +6,41 @@ import com.arn.kanbanboard.view.View;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 
 import javax.swing.*;
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        View vie = new View();
-        Model mod = new Model();
-        Controller ctrl = new Controller(vie, mod);
+
 
         //Look and Feel
         try {
-            UIManager.setLookAndFeel(new FlatIntelliJLaf());
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                System.out.println(info.getName());
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(new FlatIntelliJLaf());
+                    break;
+                }
+            }
 
         } catch (Exception e) {
             System.out.println("Look and Feel is not set");
         }
+
+        /*
+        //Look and Feel
+        try {
+            UIManager.setLookAndFeel(new FlatDarculaLaf());
+        } catch (Exception e) {
+            System.out.println("Look and Feel is not set");
+        }
+         */
+
+        View vie = new View();
+        Model mod = new Model();
+        Controller ctrl = new Controller(vie, mod);
+
+
+
+
 
         JFrame frame = new JFrame("Kanban Board");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

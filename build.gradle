@@ -13,7 +13,7 @@ repositories {
 }
 
 dependencies {
-   implementation 'com.formdev:flatlaf:0.30' //Look&Feel
+   implementation 'com.formdev:flatlaf:0.41' //Look&Feel
    compile 'com.intellij:forms_rt:7.0.3' //Intellij GUI form libs
    implementation 'com.google.code.gson:gson:2.8.6'
 }
@@ -23,13 +23,11 @@ application {
     applicationName = 'kanbanboard'
 }
 
-/*
+
 runtime {
     options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
     launcher {
         noConsole = true // No cmd console for the launcher
     }
 }
-*/
-
 
