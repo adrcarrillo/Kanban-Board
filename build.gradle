@@ -1,7 +1,7 @@
 plugins {
     id 'java'
     id 'application'
-//    id 'org.beryx.runtime' version '1.11.3' //For non-modular applications
+    id 'org.beryx.runtime' version '1.11.3' //For non-modular applications
     id "com.github.johnrengelman.shadow" version "6.0.0"
 }
 

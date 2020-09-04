@@ -36,4 +36,13 @@ public class Item {
         this.activityDone = activityDone;
     }
 
+    @Override
+    public String toString() {
+        return "Item{" +
+                "activityTodo='" + activityTodo + '\'' +
+                ", activityDoing='" + activityDoing + '\'' +
+                ", activityDone='" + activityDone + '\'' +
+                '}';
+    }
+
 }

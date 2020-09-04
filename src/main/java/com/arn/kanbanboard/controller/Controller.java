@@ -11,14 +11,16 @@ import java.awt.event.ActionListener;
 
 public class Controller implements ActionListener {
 
-    private View view;
-    private Model model;
+    private final View view;
+    private final Model model;
 
 
     public Controller (View view, Model model){
         this.view = view;
         this.model = model;
         this.view.menuSave.addActionListener(this);
+
+        model.ReadArray();
 
         this.view.textAreaLeft1.setText(this.model.itemIn[0].getActivityTodo());
         this.view.textAreaCenter1.setText(this.model.itemIn[0].getActivityDoing());
@@ -40,6 +42,9 @@ public class Controller implements ActionListener {
 
         //Get fields
         Model mod = new Model();
+        mod.ReadArray();
+        mod.WriteArray(mod.itemOut);
+
         mod.itemOut[0].setActivityTodo(this.view.textAreaLeft1.getText());
         mod.itemOut[0].setActivityDoing(this.view.textAreaCenter1.getText());
         mod.itemOut[0].setActivityDone(this.view.textAreaRight1.getText());
@@ -52,7 +57,7 @@ public class Controller implements ActionListener {
         mod.itemOut[2].setActivityDoing(this.view.textAreaCenter3.getText());
         mod.itemOut[2].setActivityDone(this.view.textAreaRight3.getText());
 
-        mod.saveBoard(mod.itemOut);
+        mod.Save(mod.itemOut);
     }
 
 }
