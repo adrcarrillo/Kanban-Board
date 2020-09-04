@@ -16,7 +16,7 @@ public class View {
     private JMenu menuFile;
     private JMenu menuEdit;
     public JMenuItem menuOpen;
-    private JMenuItem menuSave;
+    public JMenuItem menuSave;
     private JLabel boardLabel1;
     private JPanel panelTop;
     private JPanel panelCenter;

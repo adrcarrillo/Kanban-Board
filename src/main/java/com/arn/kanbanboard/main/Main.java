@@ -1,13 +1,12 @@
 package com.arn.kanbanboard.main;
 
 import com.arn.kanbanboard.controller.Controller;
-import com.arn.kanbanboard.model.Item;
 import com.arn.kanbanboard.model.Model;
-import com.arn.kanbanboard.model.ParserJson;
 import com.arn.kanbanboard.view.View;
 import com.formdev.flatlaf.FlatIntelliJLaf;
 
 import javax.swing.*;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {

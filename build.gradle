@@ -23,11 +23,13 @@ application {
     applicationName = 'kanbanboard'
 }
 
+/*
 runtime {
     options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
     launcher {
         noConsole = true // No cmd console for the launcher
     }
 }
+*/
 
 
