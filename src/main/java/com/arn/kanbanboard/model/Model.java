@@ -11,13 +11,9 @@ public class Model {
     public Item[] itemOut = new Item[3];
     //public Item[] itemOut; //Runtime error!!!
 
-
     BufferedReader reader;
     BufferedWriter writer;
     String userPath = System.getProperty("user.home");
-
-
-
 
     public Item[] ReadArray() {
         try {
@@ -44,9 +40,10 @@ public class Model {
 
     public void Save(Item[] itemOut){
         try {
+            writer = new BufferedWriter(new FileWriter(userPath+"/data.json"));
+
             //Gson gson = new Gson();
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            writer = new BufferedWriter(new FileWriter(userPath+"/data.json"));
             String json = gson.toJson(itemOut);
             writer.write(json);
             writer.close();
