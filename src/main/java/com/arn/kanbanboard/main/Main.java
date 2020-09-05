@@ -10,7 +10,7 @@ import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
 
-
+        /*
         //Look and Feel
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -25,14 +25,14 @@ public class Main {
             System.out.println("Look and Feel is not set");
         }
 
-        /*
+         */
+
         //Look and Feel
         try {
-            UIManager.setLookAndFeel(new FlatDarculaLaf());
+            UIManager.setLookAndFeel(new FlatIntelliJLaf());
         } catch (Exception e) {
             System.out.println("Look and Feel is not set");
         }
-         */
 
         View vie = new View();
         Model mod = new Model();
